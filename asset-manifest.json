@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/spotify-cafe.io/static/css/main.9bea8557.css",
-    "main.js": "/spotify-cafe.io/static/js/main.827be000.js",
+    "main.js": "/spotify-cafe.io/static/js/main.dfc6875a.js",
     "static/js/787.2c670c8d.chunk.js": "/spotify-cafe.io/static/js/787.2c670c8d.chunk.js",
     "static/media/coffee-wifi.svg": "/spotify-cafe.io/static/media/coffee-wifi.653f674f3ba4d2f60cf5bff6f5c818f8.svg",
     "static/media/coffee-menu.svg": "/spotify-cafe.io/static/media/coffee-menu.3af40cd5c066b62b9b6cc6ebd0e3231b.svg",
     "index.html": "/spotify-cafe.io/index.html",
     "main.9bea8557.css.map": "/spotify-cafe.io/static/css/main.9bea8557.css.map",
-    "main.827be000.js.map": "/spotify-cafe.io/static/js/main.827be000.js.map",
+    "main.dfc6875a.js.map": "/spotify-cafe.io/static/js/main.dfc6875a.js.map",
     "787.2c670c8d.chunk.js.map": "/spotify-cafe.io/static/js/787.2c670c8d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9bea8557.css",
-    "static/js/main.827be000.js"
+    "static/js/main.dfc6875a.js"
   ]
 }
