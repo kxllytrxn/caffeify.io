@@ -1,7 +1,7 @@
 {
   "name": "spotify-cafe",
   "version": "0.1.0",
-  "homepage": "https://kxllytrxn.github.io/spotify-cafe",
+  "homepage": "https://kxllytrxn.github.io/spotify-cafe.io",
   "private": true,
   "dependencies": {
     "@qiuz/react-image-map": "^1.1.8",
@@ -21,11 +21,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
