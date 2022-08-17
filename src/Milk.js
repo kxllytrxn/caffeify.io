@@ -12,13 +12,13 @@ function Milk() {
     console.log("avg dance:", averageDance)
     return (
         <h2>
-            {0.65 < averageDance && averageDance <= 1.0 ? (  <h2 className="coffee"> regular dairy milk at </h2> )
+            {0.65 < averageDance && averageDance <= 1.0 ? (  <h2 className="coffee"> with regular dairy milk </h2> )
             : null } 
-            {0.5 < averageDance && averageDance <= 0.65 ? (  <h2 className="coffee"> oat milk at </h2> )
+            {0.5 < averageDance && averageDance <= 0.65 ? (  <h2 className="coffee"> with oat milk</h2> )
             : null } 
-            {0.4 < averageDance && averageDance <= 0.5 ? (  <h2 className="coffee"> almond milk at</h2> )
+            {0.4 < averageDance && averageDance <= 0.5 ? (  <h2 className="coffee"> with almond milk </h2> )
             : null } 
-            {0 < averageDance && averageDance <= 0.4 ? (  <h2 className="coffee"> no milk at </h2> )
+            {0 < averageDance && averageDance <= 0.4 ? (  <h2 className="coffee"> with no milk </h2> )
             : null } 
         </h2>
     )
