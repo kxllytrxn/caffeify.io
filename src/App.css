@@ -2,15 +2,18 @@
 
 #html #my-body {
   background-color: #d9d8d8;
-  height: 30vh;
+  min-height: 52vh;
+  margin-top: 6vh;
 }
 header, body {
   background-color: #d9d8d8;
+  font-family: 'Poppins', sans-serif;
 }
 
 #my-footer { 
   background-color: #d9d8d8;
-  height:30vh;
+  height: 5vh;
+  font-family: 'Poppins', sans-serif;
 }
 
 .App {
@@ -19,7 +22,7 @@ header, body {
 }
 
 .App-logo {
-  height: 25vmin;
+  height: 25vh;
   margin-top: 2vh;
 }
 
@@ -78,19 +81,18 @@ div.line{
   color: rgb(100, 81, 59);
   font-size: 2vh;
   padding: 1.5vh;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
   border-radius: 12px;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   box-shadow: 0 5px 0 rgb(70, 93, 77);
-  transition: transform 0.2s ease-out;
+  transition: transform 0.3s ease-out;
   border: solid 3px rgba(49, 57, 49, 0.665);
   margin: 4vh;
   margin-top: 0vh;
-  font-weight: 600;
+  font-weight: 500;
   justify-content: center;
-  margin-top: 0vh;
 }
 
 #log:active {
@@ -106,16 +108,17 @@ div.line{
   text-align: center;
   color: rgb(100, 81, 59);
   height: 10vh;
-  margin-top: 10vh;
+  margin-top: 8vh;
   margin-bottom: 2vh;
   padding-left: 5%;
   padding-right: 5%;
 }
 
 .title {
+  font-size: 10vh;
   margin: 0px;
   padding: 0px;
-  flex-direction: row;
+  margin-top: 10vh;
 }
 
 .coffee {
@@ -134,12 +137,12 @@ div.line{
   background-color: #d9d8d8;
   margin-left: 0px;
   margin-right: 0px;
+  height: 80vh;
 }
 
 #temp {
   margin-top: 3vh;
 }
-
 
 @media screen and (max-width: 992px){
   .App-header {
@@ -165,9 +168,20 @@ div.line{
 
   .coffee {
     text-align: center;
-    left: -12vw;
+    left: -25vw;
     margin: 1vh;
     padding: 1vh;
   }
 
+}
+
+#spotify {
+  width: 40px;
+  margin-left: 1vw;
+}
+
+.footer-text {
+  font-size: 2vh;
+  margin-top: 20vh;
+  margin-left: 1.5vw;
 }

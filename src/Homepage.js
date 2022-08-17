@@ -34,7 +34,6 @@ function Homepage() {
     }
    
     const analyseTracks = async () => {
-        setIsLoading(true);
         const trackIDs = [] 
         songs.forEach(song => { 
             trackIDs.push(song.id)

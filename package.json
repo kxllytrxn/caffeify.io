@@ -1,7 +1,7 @@
 {
-  "name": "spotify-cafe",
+  "name": "caffeify",
   "version": "0.1.0",
-  "homepage": "https://kxllytrxn.github.io/spotify-cafe.io",
+  "homepage": "https://kxllytrxn.github.io/caffeify.io",
   "private": true,
   "dependencies": {
     "@qiuz/react-image-map": "^1.1.8",
@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
+    "mdb-react-ui-kit": "^4.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",

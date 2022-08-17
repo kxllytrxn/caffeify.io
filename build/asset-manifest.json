@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/spotify-cafe.io/static/css/main.9bea8557.css",
-    "main.js": "/spotify-cafe.io/static/js/main.dfc6875a.js",
-    "static/js/787.2c670c8d.chunk.js": "/spotify-cafe.io/static/js/787.2c670c8d.chunk.js",
-    "static/media/coffee-wifi.svg": "/spotify-cafe.io/static/media/coffee-wifi.653f674f3ba4d2f60cf5bff6f5c818f8.svg",
-    "static/media/coffee-menu.svg": "/spotify-cafe.io/static/media/coffee-menu.3af40cd5c066b62b9b6cc6ebd0e3231b.svg",
-    "index.html": "/spotify-cafe.io/index.html",
-    "main.9bea8557.css.map": "/spotify-cafe.io/static/css/main.9bea8557.css.map",
-    "main.dfc6875a.js.map": "/spotify-cafe.io/static/js/main.dfc6875a.js.map",
-    "787.2c670c8d.chunk.js.map": "/spotify-cafe.io/static/js/787.2c670c8d.chunk.js.map"
+    "main.css": "/caffeify.io/static/css/main.1c4751ff.css",
+    "main.js": "/caffeify.io/static/js/main.b06fdeb8.js",
+    "static/js/787.0a466a62.chunk.js": "/caffeify.io/static/js/787.0a466a62.chunk.js",
+    "static/media/spotify-icon.png": "/caffeify.io/static/media/spotify-icon.97e02493d5415d03df9d.png",
+    "static/media/coffee-menu.svg": "/caffeify.io/static/media/coffee-menu.3af40cd5c066b62b9b6cc6ebd0e3231b.svg",
+    "index.html": "/caffeify.io/index.html",
+    "main.1c4751ff.css.map": "/caffeify.io/static/css/main.1c4751ff.css.map",
+    "main.b06fdeb8.js.map": "/caffeify.io/static/js/main.b06fdeb8.js.map",
+    "787.0a466a62.chunk.js.map": "/caffeify.io/static/js/787.0a466a62.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bea8557.css",
-    "static/js/main.dfc6875a.js"
+    "static/css/main.1c4751ff.css",
+    "static/js/main.b06fdeb8.js"
   ]
 }
