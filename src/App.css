@@ -12,6 +12,7 @@ header, body {
 
 #my-footer { 
   background-color: #d9d8d8;
+  color:rgb(69, 59, 44);
   height: 5vh;
   font-family: 'Poppins', sans-serif;
 }
@@ -160,6 +161,7 @@ div.line{
 }
 @media screen and (max-width: 768px){
   .Menu {
+    margin-left: 0vw;
     margin-bottom: 2vh;
   }
   div.line {
@@ -172,7 +174,20 @@ div.line{
     margin: 1vh;
     padding: 1vh;
   }
+}
 
+@media screen and (max-width: 576px) {
+  .my-container {
+    height: 90vh;
+  }
+  .coffee {
+    width: 100vw;
+    left: -6vw;
+  }
+  .Menu {
+    width: 200px;
+
+  }
 }
 
 #spotify {

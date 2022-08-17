@@ -12,9 +12,9 @@ function Temperature() {
 
     return (
         <h2>
-            {0.25 < averageAcousticness && averageAcousticness <= 1.0 ? (  <h2 className="coffee" id='temp'> iced </h2> )
+            {0.25 < averageAcousticness && averageAcousticness <= 1.0 ? (  <h2 className="coffee" id='temp'> an iced </h2> )
             : null } 
-            {0 < averageAcousticness && averageAcousticness <= 0.20 ? (  <h2 className="coffee" id='temp'> hot </h2> )
+            {0 < averageAcousticness && averageAcousticness <= 0.20 ? (  <h2 className="coffee" id='temp'> a hot </h2> )
             : null } 
         </h2>
     )

@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
     const CLIENT_ID = "890e1d31bcfd46d985599fb22ce21ec2"
-    const REDIRECT_URI = "http://kxllytrxn.github.io/caffeify.io"
+    const REDIRECT_URI = "http://kxllytrxn.github.io/spotify-cafe.io"
     const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
     const RESPONSE_TYPE = "token"
     const scopes = ['user-top-read']
@@ -58,3 +58,5 @@ function App() {
 }
 
 export default App;
+
+// "homepage": "https://kxllytrxn.github.io/spotify-cafe.io",
