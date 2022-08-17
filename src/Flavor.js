@@ -23,7 +23,7 @@ function Flavor() {
             : null } 
             {60 < averagePopularity && averagePopularity <= 65 ? (  <h2 className="coffee"> hazelnut latte with </h2> )
             : null } 
-            {55 < averagePopularity && averagePopularity <= 60 ? (  <h2 className="coffee"> cinnamon latte with </h2> )
+            {55 < averagePopularity && averagePopularity <= 60 ? (  <h2 className="coffee"> chai latte with </h2> )
             : null } 
             {50 < averagePopularity && averagePopularity <= 55 ? (  <h2 className="coffee"> rose latte with </h2> )
             : null } 

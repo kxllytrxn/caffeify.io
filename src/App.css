@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
 
-#html, #my-body {
+#html #my-body {
   background-color: #d9d8d8;
+  height: 30vh;
 }
 header, body {
   background-color: #d9d8d8;
@@ -9,7 +10,7 @@ header, body {
 
 #my-footer { 
   background-color: #d9d8d8;
-  min-height:40vh;
+  height:30vh;
 }
 
 .App {
@@ -23,7 +24,8 @@ header, body {
 }
 
 .App-header {
-  min-height: 50vh;
+  padding-top: 10vh;
+  height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,20 +34,43 @@ header, body {
   font-family: 'Poppins', sans-serif;
 }
 
-.reveal{
+.Menu {
+  justify-content: center;
   position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 2s all ease;
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */}
-
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
+  margin-bottom: 15vh;
+  margin-left: 10vw;
+  width: 375px;
 }
-@media screen {
-  
+
+div.line{
+  margin-top: 15vh;
+  width: 19vw;
+  transform-origin: bottom left;
+  border-top: 3px solid rgb(69, 59, 44);
+  position: relative;
+  bottom: -2px;
+  box-sizing: border-box;
+  top: -3vh;
+}
+
+#line1 {
+  transform: rotate(-12deg);
+}
+
+#line2 {
+  transform: rotate(-10deg);
+  top: -7vh;
+}
+
+#line3 {
+  transform: rotate(-2deg);
+  top: -12vh;
+}
+
+#line4 {
+  transform-origin: top left;
+  transform: rotate(8deg);
+  top: -18vh;
 }
 
 #log {
@@ -62,6 +87,7 @@ header, body {
   transition: transform 0.2s ease-out;
   border: solid 3px rgba(49, 57, 49, 0.665);
   margin: 4vh;
+  margin-top: 0vh;
   font-weight: 600;
   justify-content: center;
   margin-top: 0vh;
@@ -74,15 +100,16 @@ header, body {
 
 .desc {
   font-family: 'Poppins', sans-serif;
-  font-size: 3vh;
+  font-size: 2.5vh;
   font-weight: 400;
   font-style: bold;
   text-align: center;
   color: rgb(100, 81, 59);
-  min-height: 10vh;
-  margin-top: 2vh;
+  height: 10vh;
+  margin-top: 10vh;
   margin-bottom: 2vh;
-
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .title {
@@ -93,17 +120,54 @@ header, body {
 
 .coffee {
   font-family: 'Poppins', sans-serif;
-  font-size: 4vh;
-  padding: 20px;
+  font-size: 3.5vh;
+  padding-bottom: 5vh;
+  margin-bottom: 5vh;
   line-height: 1;
   text-align: left;
-  justify-content: center;
-  min-height: 5vh;
+  position: relative;
+  left: -5vw;
   color: rgb(100, 81, 59);
 }
 
-.Menu {
-  justify-content: right;
-  margin-left: 5vw;
-  width: 25vw;
+#my-container { /* override bootstrap global scss */
+  background-color: #d9d8d8;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#temp {
+  margin-top: 3vh;
+}
+
+
+@media screen and (max-width: 992px){
+  .App-header {
+    height: 30vh;
+  }
+  .Menu {
+    margin-left: 5vw;
+    width: 350px;
+  }
+
+  #line1 {
+    transform: rotate(-17deg);
+    width: 20vw
+  }
+}
+@media screen and (max-width: 768px){
+  .Menu {
+    margin-bottom: 2vh;
+  }
+  div.line {
+    display: none;
+  }
+
+  .coffee {
+    text-align: center;
+    left: -12vw;
+    margin: 1vh;
+    padding: 1vh;
+  }
+
 }

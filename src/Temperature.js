@@ -11,12 +11,12 @@ function Temperature() {
     const averageAcousticness = acousticSum / songs.length;
 
     return (
-        <div className="coffee-background">
-            {0.25 < averageAcousticness && averageAcousticness <= 1.0 ? (  <h2 className="coffee"> iced </h2> )
+        <h2>
+            {0.25 < averageAcousticness && averageAcousticness <= 1.0 ? (  <h2 className="coffee" id='temp'> iced </h2> )
             : null } 
-            {0 < averageAcousticness && averageAcousticness <= 0.25 ? (  <h2 className="coffee"> hot </h2> )
+            {0 < averageAcousticness && averageAcousticness <= 0.20 ? (  <h2 className="coffee" id='temp'> hot </h2> )
             : null } 
-        </div>
+        </h2>
     )
 }
 

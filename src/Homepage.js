@@ -13,7 +13,7 @@ import "./App.css";
 
 function Homepage() {
     const [{ token, songs, features }, dispatch] = useDataLayerValue();
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
 
     const getTopSongs = async () => {
         const time_range = "short_term";
@@ -32,7 +32,6 @@ function Homepage() {
             songs: data.items
         });
     }
-    console.log(songs)
    
     const analyseTracks = async () => {
         setIsLoading(true);
@@ -56,22 +55,49 @@ function Homepage() {
                 type: "SET_FEATURES",
                 features: data.audio_features
             });
-            setIsLoading(false);
         };
     }
 
-    const renderCoffeeOrder = () => {
+    const CoffeeOrder = () => {
         return (
-            <Container>
+            <Container fluid id='my-container'>
                 <Row>
-                    <Col>  
+                    <Col xs={12} md={6}>  
                         <img src={menu} className="Menu"></img>
                     </Col>
-                    <Col className="coffee">
-                        <Temperature />
-                        <Flavor />
-                        <Milk />
-                        <Sweetness />
+                    <Col>
+                        <Row>
+                            <Col>
+                                <div className='line' id='line1'></div>
+                            </Col>
+                            <Col>                       
+                                <Temperature />
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <div className='line' id='line2'></div>
+                            </Col>
+                            <Col>                       
+                                <Flavor />
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <div className='line' id='line3'></div>
+                            </Col>
+                            <Col>                       
+                                <Milk />
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <div className='line' id='line4'></div>
+                            </Col>
+                            <Col>                       
+                                <Sweetness />
+                            </Col>
+                        </Row>
                     </Col> 
                 </Row>
                 <Row>
@@ -89,13 +115,13 @@ function Homepage() {
     }, [songs]);
 
     useEffect(() => {
-        renderCoffeeOrder();
-    }, [songs, features]);
+        setIsLoading(false);
+    }, [features]);
 
     return (
         <div className="homepage">
             <h2 className="desc"> Based on your listening history from the past four weeks, you should order a </h2>
-            {isLoading ? <LoadingSpinner /> : renderCoffeeOrder() }
+            {isLoading ? <LoadingSpinner /> : <CoffeeOrder /> }
         </div>
     );
 }
