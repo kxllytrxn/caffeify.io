@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import Homepage from './Homepage';
 import { useDataLayerValue } from './DataLayer';
-import Footer from './Footer';
+import Footer from './components/Footer';
 import "./App.css";
 
 function App() {
-    const CLIENT_ID = "890e1d31bcfd46d985599fb22ce21ec2"
-    const REDIRECT_URI = "http://kxllytrxn.github.io/caffeify.io"
-    const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
+    const CLIENT_ID = process.env.REACT_APP_CLIENT_ID
+    const REDIRECT_URI = process.env.REACT_APP_REDIRECT_URI
+    const AUTH_ENDPOINT = process.env.REACT_APP_AUTH_ENDPOINT
     const RESPONSE_TYPE = "token"
     const scopes = ['user-top-read']
     const loginURL = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${scopes}`
@@ -30,11 +30,13 @@ function App() {
     }, []);
 
   
-    const logout = () => {
-        dispatch({
-            type: "SET_TOKEN",
-            token: null
-          });        
+    const Logout = () => {
+        useEffect(() => {
+            dispatch({
+                type: "REMOVE_TOKEN",
+                token: null
+              });       
+        }, []);
         window.localStorage.removeItem("token")
     }
 
@@ -46,7 +48,7 @@ function App() {
             <body id="my-body">
                  {!token ? <a id="log" href={loginURL}> place your order</a>  
                     :   
-                    <button id="log" onClick={logout}> logout </button>
+                    <button id="log" onClick={Logout}> logout </button>
                 }
                  {!token ?  <h3 className="desc"> get your personalized coffee order based on your listening history</h3>
                     : <Homepage id="my-body" />
@@ -58,5 +60,3 @@ function App() {
 }
 
 export default App;
-
-// "homepage": "https://kxllytrxn.github.io/spotify-cafe.io",

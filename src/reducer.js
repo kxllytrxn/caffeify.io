@@ -2,10 +2,16 @@ export const initialState = {
     token: null,
     songs: [],
     features: []
-    };
+};
+
+export const getToken = () 
 
 const reducer = (state, action) => {
     switch(action.type) {
+        case "REMOVE_TOKEN": return {
+            ...state,
+            token: null
+            }
         case "SET_TOKEN": return {
             ...state, 
             token: action.token

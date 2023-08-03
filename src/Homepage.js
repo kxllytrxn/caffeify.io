@@ -3,11 +3,11 @@ import { useDataLayerValue } from "./DataLayer";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Milk from './Milk';
-import Temperature from './Temperature';
-import Sweetness from './Sweetness';
-import Flavor from './Flavor';
-import LoadingSpinner from "./LoadingSpinner";
+import Milk from './components/Milk';
+import Temperature from './components/Temperature';
+import Sweetness from './components/Sweetness';
+import Flavor from './components/Flavor';
+import LoadingSpinner from "./components/loading-spinner/LoadingSpinner";
 import menu from "./images/coffee-menu.svg";
 import "./App.css";
 

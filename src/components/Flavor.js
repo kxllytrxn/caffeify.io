@@ -1,6 +1,6 @@
 import React from 'react'
-import { useDataLayerValue } from "./DataLayer";
-import "./App.css";
+import { useDataLayerValue } from "../DataLayer";
+import "../App.css";
 
 function Flavor() {
     const [{ songs }] = useDataLayerValue();

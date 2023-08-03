@@ -1,7 +1,7 @@
 import React from 'react';
-import spotify from './images/spotify-icon.png';
+import spotify from '../images/spotify-icon.png';
 import { MDBFooter } from 'mdb-react-ui-kit';
-import "./App.css";
+import "../App.css";
 
 function Footer() {
     return (
