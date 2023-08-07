@@ -11,7 +11,7 @@ function Footer() {
         <a className='text-dark' href='https://kxllytrxn.github.io'>
           Kelly Tran
         </a>
-        <img src={spotify} id="spotify" alt="spotify"></img>
+        <img src={spotify} id="spotify" alt="spotify logo"></img>
       </div>
     </MDBFooter>
     )

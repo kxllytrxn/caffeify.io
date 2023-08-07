@@ -1,6 +1,6 @@
 import React from 'react'
-import { useDataLayerValue } from "../DataLayer";
-import "../App.css";
+import { useDataLayerValue } from "../../DataLayer";
+import "../../App.css";
 
 function Flavor() {
     const [{ songs }] = useDataLayerValue();
@@ -34,7 +34,6 @@ function Flavor() {
             {0 < averagePopularity && averagePopularity <= 40 ? (  <h2 className="coffee"> plain black coffee </h2> )
             : null } 
         </h2>
-    
     )
 }
     

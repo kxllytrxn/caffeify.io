@@ -4,17 +4,11 @@ export const initialState = {
     features: []
 };
 
-export const getToken = () 
-
-const reducer = (state, action) => {
+const spotifyReducer = (state, action) => {
     switch(action.type) {
-        case "REMOVE_TOKEN": return {
-            ...state,
-            token: null
-            }
         case "SET_TOKEN": return {
             ...state, 
-            token: action.token
+            token: action.payload
             }
         case "SET_FEATURES": return {
             ...state, 
@@ -29,4 +23,4 @@ const reducer = (state, action) => {
   }
 };
 
-export default reducer;
+export default spotifyReducer;

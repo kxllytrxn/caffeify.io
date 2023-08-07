@@ -1,6 +1,6 @@
 import React from 'react';
-import { useDataLayerValue } from "../DataLayer";
-import "../App.css";
+import { useDataLayerValue } from "../../DataLayer";
+import "../../App.css";
 
 function Milk() {
     const [{ songs, features }] = useDataLayerValue();
@@ -9,7 +9,6 @@ function Milk() {
         danceSum += feature.danceability
     }); 
     const averageDance = danceSum / songs.length;
-    console.log("avg dance:", averageDance)
     return (
         <h2>
             {0.65 < averageDance && averageDance <= 1.0 ? (  <h2 className="coffee"> with regular dairy milk </h2> )

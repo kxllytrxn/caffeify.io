@@ -4,10 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { DataLayer } from './DataLayer';
-import reducer,{ initialState } from './reducer';
-import { usePromiseTracker } from "react-promise-tracker";
+import reducer,{ initialState } from './reducers/reducer';
 import 'bootstrap/dist/css/bootstrap.css';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

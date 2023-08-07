@@ -3,10 +3,10 @@ import { useDataLayerValue } from "./DataLayer";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Milk from './components/Milk';
-import Temperature from './components/Temperature';
-import Sweetness from './components/Sweetness';
-import Flavor from './components/Flavor';
+import Milk from './components/coffee-features/Milk';
+import Temperature from './components/coffee-features/Temperature';
+import Sweetness from './components/coffee-features/Sweetness';
+import Flavor from './components/coffee-features/Flavor';
 import LoadingSpinner from "./components/loading-spinner/LoadingSpinner";
 import menu from "./images/coffee-menu.svg";
 import "./App.css";
@@ -33,7 +33,7 @@ function Homepage() {
         });
     }
    
-    const analyseTracks = async () => {
+    const analyzeTracks = async () => {
         const trackIDs = [] 
         songs.forEach(song => { 
             trackIDs.push(song.id)
@@ -62,7 +62,7 @@ function Homepage() {
             <Container fluid id='my-container'>
                 <Row>
                     <Col xs={12} md={6}>  
-                        <img src={menu} className="Menu"></img>
+                        <img alt="Coffee Menu"src={menu} className="Menu"></img>
                     </Col>
                     <Col>
                         <Row>
@@ -110,7 +110,7 @@ function Homepage() {
     }, []);
 
     useEffect(() => {
-        analyseTracks();
+        analyzeTracks();
     }, [songs]);
 
     useEffect(() => {
@@ -119,7 +119,7 @@ function Homepage() {
 
     return (
         <div className="homepage">
-            <h2 className="desc"> Based on your listening history from the past                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              four weeks, you should order </h2>
+            <h2 className="desc"> Based on your listening history from the past four weeks, you should order </h2>
             {isLoading ? <LoadingSpinner /> : <CoffeeOrder /> }
         </div>
     );

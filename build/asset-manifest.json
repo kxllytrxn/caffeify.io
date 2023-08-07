@@ -1,17 +1,19 @@
 {
-  "files": {
-    "main.css": "/caffeify.io/static/css/main.02a90811.css",
-    "main.js": "/caffeify.io/static/js/main.ed74e111.js",
-    "static/js/787.0a466a62.chunk.js": "/caffeify.io/static/js/787.0a466a62.chunk.js",
-    "static/media/spotify-icon.png": "/caffeify.io/static/media/spotify-icon.97e02493d5415d03df9d.png",
-    "static/media/coffee-menu.svg": "/caffeify.io/static/media/coffee-menu.3af40cd5c066b62b9b6cc6ebd0e3231b.svg",
-    "index.html": "/caffeify.io/index.html",
-    "main.02a90811.css.map": "/caffeify.io/static/css/main.02a90811.css.map",
-    "main.ed74e111.js.map": "/caffeify.io/static/js/main.ed74e111.js.map",
-    "787.0a466a62.chunk.js.map": "/caffeify.io/static/js/787.0a466a62.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.02a90811.css",
-    "static/js/main.ed74e111.js"
-  ]
+  "main.css": "/caffeify.io/static/css/main.287ad2c1.chunk.css",
+  "main.js": "/caffeify.io/static/js/main.a7cd9fad.chunk.js",
+  "main.js.map": "/caffeify.io/static/js/main.a7cd9fad.chunk.js.map",
+  "static/js/1.561126de.chunk.js": "/caffeify.io/static/js/1.561126de.chunk.js",
+  "static/js/1.561126de.chunk.js.map": "/caffeify.io/static/js/1.561126de.chunk.js.map",
+  "static/css/2.ec4a136c.chunk.css": "/caffeify.io/static/css/2.ec4a136c.chunk.css",
+  "static/js/2.93635b1a.chunk.js": "/caffeify.io/static/js/2.93635b1a.chunk.js",
+  "static/js/2.93635b1a.chunk.js.map": "/caffeify.io/static/js/2.93635b1a.chunk.js.map",
+  "runtime~main.js": "/caffeify.io/static/js/runtime~main.92785b21.js",
+  "runtime~main.js.map": "/caffeify.io/static/js/runtime~main.92785b21.js.map",
+  "static/media/coffee-menu.svg": "/caffeify.io/static/media/coffee-menu.fbd57cc9.svg",
+  "static/media/spotify-icon.png": "/caffeify.io/static/media/spotify-icon.1c278f42.png",
+  "static/css/2.ec4a136c.chunk.css.map": "/caffeify.io/static/css/2.ec4a136c.chunk.css.map",
+  "static/css/main.287ad2c1.chunk.css.map": "/caffeify.io/static/css/main.287ad2c1.chunk.css.map",
+  "index.html": "/caffeify.io/index.html",
+  "precache-manifest.21c33a7da4572f3b08ebbdb1357e7094.js": "/caffeify.io/precache-manifest.21c33a7da4572f3b08ebbdb1357e7094.js",
+  "service-worker.js": "/caffeify.io/service-worker.js"
 }

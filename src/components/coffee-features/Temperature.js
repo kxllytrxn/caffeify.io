@@ -1,6 +1,6 @@
 import React from 'react';
-import { useDataLayerValue } from "../DataLayer";
-import "../App.css";
+import { useDataLayerValue } from "../../DataLayer";
+import "../../App.css";
 
 function Temperature() {
     const [{ songs, features }] = useDataLayerValue();
@@ -8,6 +8,7 @@ function Temperature() {
     features.forEach(feature => {
         acousticSum += feature.acousticness
     }); 
+    console.log(songs)
     const averageAcousticness = acousticSum / songs.length;
 
     return (
